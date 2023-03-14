@@ -1,19 +1,15 @@
 # Lab-2
 
-
-
 ## About Me
 
 ### Author: Tricia Sawyer
 
 ### Links and Resources
-* Eric Meyer
 
+* Eric Meyer
 
 ### Lighthouse Accessibility Report Score
 
-Place link to lighthouse
+![Light House Accessibility](images/Lighthouse.png)
 
 ### Reflections and Comments
-
-
