@@ -30,3 +30,5 @@ if (inAliens === 'yes' || inAliens === 'y') {
 } else if (inAliens === 'no' || inAliens === 'n') {
   alert('Wrong! Aliens are real.');
 }
+
+alert('Thanks for playing my About Me game!');
