@@ -7,6 +7,7 @@ let whatName = prompt('What is your name?');
 //console.log("🚀 ~ file: index.html:34 ~ whatName:", whatName);
 alert('Nice to meet you ' + whatName + ', welcome to my website!');
 
+
 let onlyChild = prompt('Am I an only child?').toLowerCase();
 //console.log("🚀 ~ file: index.html:36 ~ onlyChild:", onlyChild);
 if (onlyChild === 'no' || onlyChild === 'n') {
@@ -31,4 +32,4 @@ if (inAliens === 'yes' || inAliens === 'y') {
   alert('Wrong! Aliens are real.');
 }
 
-alert('Thanks for playing my About Me game!');
+alert('Thanks for playing my About Me game ' + whatName + '!');
