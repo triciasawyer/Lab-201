@@ -2,18 +2,14 @@
 console.log('app file is working');
 
 
-
-//let userPoints = 0;
-//console.log("🚀 ~ file: app.js:5 ~ userPoints:", userPoints);
-
-
 //let userName;
 
 //while(!userName) {
 // userName = prompt('Hello, What is your name');
 //}
 
-
+let userPoints = 0;
+//console.log("🚀 ~ file: app.js:5 ~ userPoints:", userPoints);
 
 let whatName = prompt('Hello, what is your name?');
 //console.log("🚀 ~ file: index.html:34 ~ whatName:", whatName);
@@ -27,6 +23,8 @@ if (favSport === 'no' || favSport === 'n') {
 } else if (favSport === 'yes' || favSport === 'y') {
   alert('Wrong! I like baseball.');
 }
+userPoints++;
+
 
 let onlyChild = prompt('Am I an only child?').toLowerCase().trim();
 //console.log("🚀 ~ file: index.html:36 ~ onlyChild:", onlyChild);
@@ -52,4 +50,16 @@ if (inAliens === 'yes' || inAliens === 'y') {
   alert('Wrong! Aliens are real.');
 }
 
+let guessNumber = prompt('Guess a number, 1-10! You get three tries.');
+//console.log("🚀 ~ file: app.js:54 ~ guessNumber:", guessNumber);
+if (guessNumber <4) {
+  alert('Too low! Guess again. You have two more tries.');
+} else if (guessNumber >6) {
+  alert('Too high! Guess again. You have one more try.');
+} else if (guessNumber === 5) {
+  alert('You guessed my number! Good job.');
+}
+
 alert('Thanks for playing my About Me game ' + whatName + '!');
+
+while userLog = 0;
