@@ -2,12 +2,6 @@
 console.log('app file is working');
 
 
-//let userName;
-
-//while(!userName) {
-// userName = prompt('Hello, What is your name');
-//}
-
 
 let userPoints = 0;
 console.log('🚀 ~ file: app.js:5 ~ userPoints:', userPoints);
@@ -54,51 +48,39 @@ if (inAliens === 'yes' || inAliens === 'y') {
   alert('Wrong! Aliens are real.');
 }
 
-//It should give the user exactly four opportunities to get the correct answer.
-//After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
 
 
-
+let rightNumber = 5;
 let attempts = 0;
-while(attempts < 4){
+while (attempts < 4) {
   attempts++;
-  let guessNumber = prompt('Guess a number, 1-10! You get four tries.');
-  console.log('🚀 ~ file: app.js:54 ~ guessNumber:', guessNumber);
+  let guessNumber = parseInt(prompt('Guess a number, 1-10! You get four tries.'));
   if (guessNumber <= 4) {
     alert('Too low! Guess again.');
   } else if (guessNumber >= 6) {
     alert('Too high! Guess again.');
-  } if (guessNumber === 5) {
+  } if (guessNumber === rightNumber) {
     alert('You guessed the correct number, ' + guessNumber + '! Good job.');
+    userPoints++;
     break;
   }
-  alert('Man! The correct answer was 5!');
 }
+alert('Man! The correct answer was 5.');
 
 
-//Give the user 6 attempts to guess the correct answer.
-//The guesses will end once the user guesses a correct answer or they run out of attempts.
-
+// Array
+let statesTraveled = ['texas', 'hawaii', 'new nexico', 'ohio', 'california', 'oregon', 'nebraska', 'missouri', 'minnesota', 'oklahoma', 'kansas', 'north dakota', 'south dakota', 'illinois', 'iowa'];
 let chances = 0;
-while(chances < 6){
+while (chances < 6) {
   chances++;
   let multiAnswer = prompt('What states have I traveled to? You get six attempts.').toLowerCase().trim();
   console.log('🚀 ~ file: app.js:65 ~ multiAnswer:', multiAnswer);
 
-  let statesTraveled = ['Texas', 'Hawaii', 'New Mexico', 'Ohio', 'California', 'Oregon', 'Nebraska', 'Missouri', 'Minnesota', 'Oklahoma', 'Kansas', 'North Dakota', 'South Dakota', 'Illinois'];
-  console.log('🚀 ~ file: app.js:74 ~ statesTraveled:', statesTraveled);
-  if (statesTraveled === statesTraveled) {
+  if (statesTraveled.includes(multiAnswer)) {
     alert('You guessed one of the states I have traveled too! Well done.');
-  }
-  
-  for(let i = 0; i < statesTraveled.length; i++){
-    console.log('traveled', statesTraveled[i]);
+    break;
+  } else {
+    alert('Nope! Never been there.');
   }
 }
-
-
-
-
-alert('Thanks for playing my About Me game ' + whatName + '!');
-
-//while userLog = 0;
+alert('Thanks for playing my About Me game ' + whatName + '! Your score was ' + userPoints);
