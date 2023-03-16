@@ -51,17 +51,17 @@ function runPets(){
 runPets();
 
 
-//function runAliens(){
-let inAliens = prompt('Do I believe in aliens?').toLowerCase().trim();
-console.log('🚀 ~ file: index.html:40 ~ inAliens:', inAliens);
-if (inAliens === 'yes' || inAliens === 'y') {
-  alert('Oh yeah! I definitely do');
-  userPoints++;
-} else if (inAliens === 'no' || inAliens === 'n') {
-  alert('Wrong! Aliens are real.');
+function runAliens(){
+  let inAliens = prompt('Do I believe in aliens?').toLowerCase().trim();
+  console.log('🚀 ~ file: index.html:40 ~ inAliens:', inAliens);
+  if (inAliens === 'yes' || inAliens === 'y') {
+    alert('Oh yeah! I definitely do');
+    userPoints++;
+  } else if (inAliens === 'no' || inAliens === 'n') {
+    alert('Wrong! Aliens are real.');
+  }
 }
-
-//runAliens();
+runAliens();
 
 
 //function runGuess(){
