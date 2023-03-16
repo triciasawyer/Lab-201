@@ -85,24 +85,24 @@ function runGuess(){
 runGuess();
 
 
-//function runTraveled(){
-let statesTraveled = ['texas', 'hawaii', 'new nexico', 'ohio', 'california', 'oregon', 'nebraska', 'missouri', 'minnesota', 'oklahoma', 'kansas', 'north dakota', 'south dakota', 'illinois', 'iowa'];
-let chances = 0;
-while (chances < 6) {
-  chances++;
-  let multiAnswer = prompt('What states have I traveled to? You get six attempts.').toLowerCase().trim();
-  console.log('🚀 ~ file: app.js:65 ~ multiAnswer:', multiAnswer);
+function runTraveled(){
+  let statesTraveled = ['texas', 'hawaii', 'new nexico', 'ohio', 'california', 'oregon', 'nebraska', 'missouri', 'minnesota', 'oklahoma', 'kansas', 'north dakota', 'south dakota', 'illinois', 'iowa'];
+  let chances = 0;
+  while (chances < 6) {
+    chances++;
+    let multiAnswer = prompt('What states have I traveled to? You get six attempts.').toLowerCase().trim();
+    console.log('🚀 ~ file: app.js:65 ~ multiAnswer:', multiAnswer);
 
-  if (statesTraveled.includes(multiAnswer)) {
-    alert('You guessed one of the states I have traveled too! Well done.');
-    userPoints++;
-  } else {
-    alert('Nope! Never been there.');
+    if (statesTraveled.includes(multiAnswer)) {
+      alert('You guessed one of the states I have traveled too! Well done.');
+      userPoints++;
+    } else {
+      alert('Nope! Never been there.');
+    }
   }
+  alert('Thanks for playing my About Me game ' + whatName + '! Your score was ' + userPoints);
 }
-alert('Thanks for playing my About Me game ' + whatName + '! Your score was ' + userPoints);
-
-//runTraveled();
+runTraveled();
 
 
 
