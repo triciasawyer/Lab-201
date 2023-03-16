@@ -64,25 +64,25 @@ function runAliens(){
 runAliens();
 
 
-//function runGuess(){
-let rightNumber = 5;
-let attempts = 0;
-while (attempts < 4) {
-  attempts++;
-  let guessNumber = parseInt(prompt('Guess a number, 1-10! You get four tries.'));
-  if (guessNumber <= 4) {
-    alert('Too low! Guess again.');
-  } else if (guessNumber >= 6) {
-    alert('Too high! Guess again.');
-  } if (guessNumber === rightNumber) {
-    alert('You guessed the correct number, ' + guessNumber + '! Good job.');
-    userPoints++;
-    break;
+function runGuess(){
+  let rightNumber = 5;
+  let attempts = 0;
+  while (attempts < 4) {
+    attempts++;
+    let guessNumber = parseInt(prompt('Guess a number, 1-10! You get four tries.'));
+    if (guessNumber <= 4) {
+      alert('Too low! Guess again.');
+    } else if (guessNumber >= 6) {
+      alert('Too high! Guess again.');
+    } if (guessNumber === rightNumber) {
+      alert('You guessed the correct number, ' + guessNumber + '! Good job.');
+      userPoints++;
+      break;
+    }
   }
+  alert('Man! The correct answer was 5.');
 }
-alert('Man! The correct answer was 5.');
-
-//runGuess();
+runGuess();
 
 
 //function runTraveled(){
