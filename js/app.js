@@ -25,17 +25,17 @@ function runSport(){
 runSport();
 
 
-//function runChild(){
-let onlyChild = prompt('Am I an only child?').toLowerCase().trim();
-console.log('🚀 ~ file: index.html:36 ~ onlyChild:', onlyChild);
-if (onlyChild === 'no' || onlyChild === 'n') {
-  alert('You got it! I do have 3 siblings.');
-  userPoints++;
-} else if (onlyChild === 'yes' || onlyChild === 'y') {
-  alert('Wrong! I actually have 3 siblings.');
+function runChild(){
+  let onlyChild = prompt('Am I an only child?').toLowerCase().trim();
+  console.log('🚀 ~ file: index.html:36 ~ onlyChild:', onlyChild);
+  if (onlyChild === 'no' || onlyChild === 'n') {
+    alert('You got it! I do have 3 siblings.');
+    userPoints++;
+  } else if (onlyChild === 'yes' || onlyChild === 'y') {
+    alert('Wrong! I actually have 3 siblings.');
+  }
 }
-
-//runChild();
+runChild();
 
 
 //function runPets(){
