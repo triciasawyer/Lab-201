@@ -38,17 +38,17 @@ function runChild(){
 runChild();
 
 
-//function runPets(){
-let anyPets = prompt('Do I have any pets?').toLowerCase().trim();
-console.log('🚀 ~ file: index.html:38 ~ anyPets:', anyPets);
-if (anyPets === 'no' || anyPets === 'n') {
-  alert('Correct! I sadly do not have any pets.');
-  userPoints++;
-} else if (anyPets === 'yes' || anyPets === 'y') {
-  alert('Nope!');
+function runPets(){
+  let anyPets = prompt('Do I have any pets?').toLowerCase().trim();
+  console.log('🚀 ~ file: index.html:38 ~ anyPets:', anyPets);
+  if (anyPets === 'no' || anyPets === 'n') {
+    alert('Correct! I sadly do not have any pets.');
+    userPoints++;
+  } else if (anyPets === 'yes' || anyPets === 'y') {
+    alert('Nope!');
+  }
 }
-
-//runPets();
+runPets();
 
 
 //function runAliens(){
