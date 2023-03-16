@@ -68,6 +68,8 @@ while (attempts < 4) {
 alert('Man! The correct answer was 5.');
 
 
+
+
 // Array
 let statesTraveled = ['texas', 'hawaii', 'new nexico', 'ohio', 'california', 'oregon', 'nebraska', 'missouri', 'minnesota', 'oklahoma', 'kansas', 'north dakota', 'south dakota', 'illinois', 'iowa'];
 let chances = 0;
@@ -78,9 +80,27 @@ while (chances < 6) {
 
   if (statesTraveled.includes(multiAnswer)) {
     alert('You guessed one of the states I have traveled too! Well done.');
-    break;
+    userPoints++;
   } else {
     alert('Nope! Never been there.');
   }
 }
 alert('Thanks for playing my About Me game ' + whatName + '! Your score was ' + userPoints);
+
+
+// Factoring random number in guessing number game
+
+// let randomNumber = math.random() * 10;  || gives decimal number
+// let randomNumber = math.floor(math.random() * 10) + 1 ; || whole number, math.floor gives us whole number. The +1 gives us a range
+
+// let attempt = 4;
+// let question = 'guess an integer from 1-10';
+// let guessNumber = parseInt(prompt(question = 'You have' + attemtps + 'try\'s to go.'))
+// if they don't want to play
+//if (!guessNumber){
+//  break;
+//}
+//if (guessNumber === randomNumber) {
+// alert('You guessed  the correct number, ' + randomNumber)
+// }
+
