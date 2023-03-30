@@ -1,8 +1,8 @@
 # Lab-2
 
-## About Me
+## Author: Tricia Sawyer | Class: DeltaV code 201
 
-### Author: Tricia Sawyer
+## About: I created a guessing game using JavaScript that prompts questions about me and takes in an input, then prompts the user with a response based on their input. My webpage is a biography that I built up with html and css.
 
 ### Links and Resources
 
@@ -15,7 +15,4 @@
 ### Reflections and Comments
 
 I enjoyed creating this about me webpage, and using javascript to create
-prompts and alerts! It's really sweet!
-I also created a guessing game that takes in a numeric input by prompting the
-user to guess a number. It indicates through an alert, if the guess is too high or too low,
-giving them four opportunities to get the correct answer.
+prompts and alerts.
